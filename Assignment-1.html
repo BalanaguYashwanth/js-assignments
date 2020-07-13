@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script >
+           function change()
+           {
+               var d=new Date()
+               var daylist=["Monday","Tuesday","Wednesday","Friday","Saturday","Sunday"]
+               document.getElementById("sample").innerHTML="Today is :"+daylist[d.getDay()];
+               var hours = d.getHours();
+               var format=hours>=12?"PM":"AM";
+               console.log(hours);
+               hours=hours%12;
+               hours=hours?hours:12;
+               document.getElementById("sample1").innerHTML="Current time is :"+hours+format+":"+d.getMinutes()+":"+d.getSeconds();
+           }
+                    
+        </script>
+
+    </head>
+    <body onload="change()">
+        <p id="sample"> sample day </p>
+        <p id="sample1"> sample time </p>
+    </body>
+
+</html>
