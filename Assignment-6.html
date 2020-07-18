@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change()
+        {
+            var data = document.getElementById("user").value;
+             if(data%2==0)
+             {
+                 document.getElementById('ans').innerHTML= "the Number entered is "+ data +" and Number is even";
+             }
+             else if(data%2==1){
+                 document.getElementById('ans').innerHTML= "the Number entered is "+data+" and Number is odd";
+             }
+
+        }
+    </script>
+
+</head>
+<body>
+    Enter the number to check whether it is even or not :
+    <input type="number" id="user" placeholder="enter the number"> 
+    <p id="ans">  </p>
+    <button onclick="change()"> submit </button>
+</body>
+</html>

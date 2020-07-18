@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    function change()
+    {
+        let garde=document.getElementById('marks').value;
+        switch(document.getElementById('marks').value)
+        {
+            case '100': 
+            document.getElementById("userdata").innerHTML="Marks are "+ document.getElementById('marks').value +" and grade is A";
+            break;
+            case '50': 
+            document.getElementById("userdata").innerHTML="Marks are "+ document.getElementById('marks').value +" and grade is B";
+            break;
+            case '10': 
+            document.getElementById("userdata").innerHTML="Marks are "+ document.getElementById('marks').value +" and grade is C";
+            break;
+            default:
+            document.getElementById("userdata").innerHTML="please enter valid  marks like 100,50,10 to get valid grades";
+        }
+    }
+
+</script>
+
+<body>
+   Enter your marks buddy:<input type="number" id="marks" placeholder="enter your orginal marks">
+   <button onclick="change()"> submit </button> 
+   <p id="userdata"> </p>
+</body>
+</html>

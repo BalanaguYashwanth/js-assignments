@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function change()
+        {
+            var data=document.getElementById("name").value;
+            var data1 = data.replace(/"/g,'');
+            var res = data1.split(" ");
+            console.log("The OS name is "+res[0]+"and verison is "+res[1]);
+
+        }
+    </script>
+</head>
+<body>
+    enter the data to split like android version etc :<input type="text" id="name" placeholder="enter the string" >
+    <button onclick="change()"> submit </button>
+</body>
+</html>
