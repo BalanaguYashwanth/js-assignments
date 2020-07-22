@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function change()
+        {
+            let arr=[1,2,3,4,5,11,]
+
+            let oddvalue = arr.filter(
+                function(user)
+                {
+                    if(user%2==1)
+                    {
+                        return user;
+                    }
+                }
+            )
+           
+            let cubevalue = oddvalue.map(
+                function(user)
+                {
+                    return user**3
+                }
+            )
+            console.log(cubevalue)
+
+        }
+    </script>
+
+</head>
+<body onload="change()">
+    
+</body>
+</html>

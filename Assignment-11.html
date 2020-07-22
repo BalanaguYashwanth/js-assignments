@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function change()
+        {
+            let arr=[1,2,3,4,5,,6,7,8,11]
+
+            let oddvalue = arr.filter(
+                function(user)
+                {
+                    if(user%2==1)
+                    {
+                        return user;
+                    }
+                }
+            )
+           
+           
+            console.log(oddvalue)
+
+        }
+    </script>
+
+</head>
+<body onload="change()">
+    
+</body>
+</html>

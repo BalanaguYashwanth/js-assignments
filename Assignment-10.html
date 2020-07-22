@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function change()
+    {
+       let data= document.getElementById('positive').value;
+       if(data>0)
+       {
+           document.getElementById("tell").innerHTML="you enetered the positive number";
+           console.log(data);
+
+       }
+       else{
+        document.getElementById("tell").innerHTML="please enter positive number you entered number is not posive";
+       }
+
+    }
+</script>
+<body>
+    enter the positive number :<input id="positive" >
+    <p id="tell"> </p>
+    <button onclick="change()"> submit</button> 
+</body>
+</html>
+
