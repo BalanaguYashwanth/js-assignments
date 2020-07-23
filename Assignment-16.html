@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change()
+        {
+            dt=new Date();
+            console.log();
+            var data=document.getElementById("user").value;
+            document.getElementById('come').innerHTML+='welcome to this page :'+data+'<br> Present time'+'&nbsp'+dt.toLocaleTimeString();
+            
+        }
+        function darkmode()
+        {
+           
+            document.body.style.backgroundColor='black';
+            document.body.style.color='white';
+        }
+        function normalmode()
+        {
+           
+            document.body.style.backgroundColor='white';
+            document.body.style.color='black';
+        }
+    
+    </script>
+</head>
+<body>
+   <p> Please enter the name in your input box;</p>
+    
+   
+    user:<input id="user"  placeholder="enter the name">
+    <p id="come"> </p>
+    <button onclick="change()"> submit</button>
+    <p> wanna experience the darkmode</p>
+    <button onclick="darkmode()"> Enable dark mode </button>
+    <button onclick="normalmode()"> Reset to Normal mode </button>
+</body>
+</html>
