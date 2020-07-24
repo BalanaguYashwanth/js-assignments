@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change()
+        {
+            const name=document.getElementById("name").value;
+            const email=document.getElementById("email").value;
+            const password=document.getElementById("password").value;
+
+            namemsg=document.getElementById("namemsg");
+            emailmsg=document.getElementById("emailmsg");
+            passwordmsg=document.getElementById("passwordmsg");
+           
+            if(name=="")
+            {
+                namemsg.innerHTML="please enter the name";
+                return false;
+
+            }
+            if(name.length<4)
+            {
+                namemsg.innerHTML="please enter the 4 numbers in name";
+                return false;
+            }
+            if(email=="")
+            {
+                emailmsg.innerHTML="please enter the email";
+                return false;
+
+            }
+            if(!email.includes('@'))
+            {
+                email.msg.innerHTML="please enter the @ in email";
+                return false;
+            }
+            if(password=="")
+            {
+                passwordmsg.innerHTML="please enter the password";
+                return false;
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <form action="" onsubmit="return change()" >
+        <div>
+       
+       name: <input type="text"  id="name" placeholder="enter the name">
+       <p style="color: red;" id="namemsg"> </p>
+       <br>
+    
+       email:<input type="email" name="email" id="email" placeholder="enter the email" >
+       <p style="color: red;" id="emailmsg"> </p>
+       <br>
+       password: <input type="password" name="password" id="password" placeholder="enter the password">
+       <p style="color: red;" id="passwordmsg"> </p>
+       <br>
+       <button> submit </button>
+    </div>
+    </form>
+</body>
+</html>
