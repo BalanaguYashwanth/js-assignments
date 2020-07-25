@@ -5,16 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body >
-    user <input type="number" >
-    <button onclick="change()"></button>
+<body>
+    enter the present salary <input type="number" id="salary">
+    enter the sales done <input type="number" id="sales">
+    <button onclick="change()">submit</button>
+    <p id="result"> result  </p>
 </body>
 <script>
 
     function change()
     {
-       var data =document.getElementById("sales").value;
-       console.log(data);
+       let sales =parseInt(document.getElementById("sales").value);
+       let salary =parseInt(document.getElementById("salary").value);
+       if(sales>=0 && sales<=5000)
+       {
+           document.getElementById('result').innerHTML=(salary)+((salary*2)/100);
+       }
+       else if(sales==5001 && sales==10000)
+       {
+        document.getElementById('result').innerHTML=(salary)+((salary*5)/100);
+       }
+       else if(sales==10001 && sales==20000)
+       {
+        document.getElementById('result').innerHTML=(salary)+((salary*7)/100);
+       }
+       else if(sales>20000)
+       {
+        document.getElementById('result').innerHTML=(salary)+((salary*10)/100);
+       }
         
     }
 
