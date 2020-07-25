@@ -9,13 +9,13 @@
 
     function change()
     {
-        let a = document.getElementById('a').value;
-        let b = document.getElementById('b').value;
+        let a = parseInt(document.getElementById('a').value);
+        let b = parseInt(document.getElementById('b').value);
         let cal=document.getElementById('calculate').value;
         let c=0;
         switch (cal) {
             case '1':
-            c=parseInt(a)+parseInt(b);
+            c=(a)+(b);
             document.getElementById("result").innerHTML=c;
             alert(c);
             break;
@@ -29,6 +29,14 @@
             break;
             case '4':
              c=a/b;
+             document.getElementById("result").innerHTML=c;
+            break;
+            case '5':
+             c=Math.sqrt(a+b);
+             document.getElementById("result").innerHTML=c;
+            break;
+            case '6':
+             c=(a/b)*100;
              document.getElementById("result").innerHTML=c;
             break;
             default:
