@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+    function change()
+    {
+        const student ={
+            name:"Helsiniki",
+            age:24,
+            projects:{
+                daidgame:"two players dice game using js"
+            }
+        }
+
+        function user({age})
+        {
+            return age;
+        }
+        console.log(user(student));
+
+        function user1({name,age,projects})
+        {
+            return `${name},${age},${projects.daidgame}`
+        }
+
+        console.log(user1(student));
+
+
+   
+    }
+
+
+</script>
+<body onload="change()" >
+    
+</body>
+</html>
