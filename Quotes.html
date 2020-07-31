@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<style>
+    .selector-for-some-widget {
+        box-sizing: content-box;
+      }
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      
+</style>
+<body onload="change()">
+
+    <div id="divtag" class="card bg-secondary text-white  p-3" style="width: 50rem; max-width:100%" >
+        <div class="card-header">
+          Tensors Quote to Awake 
+        </div>
+        <div class="card-body">
+          <blockquote>
+            <h5 id="get" class="card-title text-center" >Loding ......</h5>
+
+          <footer id="blockquote-footer" class="card-title text-right"> <cite  title="Source Title"> <p id="get1">Author</p></cite> </footer>
+          
+          </blockquote>
+          
+        </div>
+        <div class="card-footer ">
+            <button  onclick="change()" class="btn btn-primary">Next Quote</button>
+        </div>
+      </div>
+</body>
+
+<script>
+    function change()
+    {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = async function()
+        {
+            if(xmlhttp.readyState==4 && xmlhttp.status==200)
+            {
+                var x = await JSON.parse(xmlhttp.responseText);
+                document.getElementById("get").innerHTML=x.content;
+                document.getElementById("get1").innerHTML="---- "+x.author;
+            }
+        }
+        xmlhttp.open('GET','https://api.quotable.io/random',true);
+        xmlhttp.setRequestHeader("Content-type","application/json");
+        xmlhttp.send();
+    }
+</script>
+
+</html>
