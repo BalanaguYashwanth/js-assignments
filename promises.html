@@ -4,20 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <script>
-        function change1()
-        {
-           async function mockapi()
-           {
-               const data= await fetch('https://5e2ac93c4fdc030014e20c2a.mockapi.io/api/v1/get/');
-                const response =await (data.json());
-                console.log(response);
-           }
-           mockapi();
-        }
-
-
-        function change2()
+        function change()
         {
            let users=[
             {
@@ -73,19 +62,17 @@
             name:'ganessh',
             email:'ganesh@gmail.com',
         }).then(getuser);
-    
+
+
     }
 
-    
-function change()
-{
-    change1();
-    change2();
-}
 
     </script>
 </head>
-<body onload="change()" >
+<body onload='change()'>
     
+    <p> hi buddy</p>
+
+
 </body>
 </html>

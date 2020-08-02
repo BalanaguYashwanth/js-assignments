@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo app</title>
+
+<script>
+
+    function change()
+    {
+        let item=document.querySelector('#text').value;
+        let listdata=document.createTextNode(item);
+        let li=document.createElement('li');
+        li.appendChild(listdata);
+        let all=document.getElementById('list');
+        all.appendChild(li);
+    }
+
+</script>
+
+</head>
+<body>
+    Items <input id="text" placeholder="enter the item" >
+    <button onclick="change()">Submit</button>
+
+    <ol id="list">
+
+    </ol>
+
+</body>
+</html>

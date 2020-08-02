@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function change()
+        {
+          
+            let data =document.getElementById('text1').value;
+            let data1= data.replace(/"/g,'');
+            var all=data1.split(" ");
+            console.log(all[0]);
+            
+        }
+    </script>
+</head>
+<body onload="change()">
+    <input type="text" id="text1" >
+    <button onclick="change()"> submit </button>
+
+</body>
+</html>

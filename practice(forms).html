@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change()
+        {
+            const name=document.getElementById("name").value;
+            const email=document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            if(name=="")
+            {
+                document.getElementById('namemsg').innerHTML="please enter the name";
+                return false;
+
+            }
+            if(name.length<4)
+            {
+                document.getElementById('namemsg').innerHTML="please enter 4 letter the name";
+                return false;
+
+            }
+            if(email=="")
+            {
+                document.getElementById('emailmsg').innerHTML="please enter the email";
+                return false;
+
+            }
+            if(!email.includes('@'))
+            { 
+                document.getElementById('emailmsg').innerHTML="please enter the email with @";
+                return false;
+
+            }
+            if(password=="")
+            {
+                document.getElementById('passwordmsg').innerHTML="please enter the name";
+                return false;
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="" onsubmit="return change()" >
+
+        name<input type="text" id="name" placeholder="enter the name">
+        <p id="namemsg" style="color: brown;" > </p>
+        <br>
+        email<input type="email" id="email" placeholder="enter the email">
+        <p id="emailmsg" style="color: brown;" > </p>
+        <br>
+        password<input type="password" id="password">
+        <p id="passwordmsg" style="color: brown;" > </p>
+        <br>
+        <button> submit </button>
+    </form>
+</body>
+</html>
+
+
+ 
