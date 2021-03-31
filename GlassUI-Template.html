@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/180daaa776.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism effect by ui.glass</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="presentation-shape bg-soft d-flex rounded w-100"></div>
+    <div class="presentation-shape d-flex rounded gradient-shape rotate w-100"></div>
+    <div class="w-100 p-3 p-lg-5">
+        <div>
+            <div class="card">
+                <div class="card-header text-center text-md-center">
+                    <h4 class="mb-0 fs-5">Create an account</h4>
+                </div>
+                <div class="card-body py-3">
+                    <form action="#">
+
+                        <div class="form-group mb-4">
+                            <label for="email">Your Email</label>
+                            <div class="input-group">
+                                <!-- <span class="input-group-text" id="basic-addon3">
+                            <span > <i class="fa fa-envelope"></i> </span>
+                        </span> -->
+                                <input type="email" class="form-control" placeholder="example@company.com" id="email"
+                                    autofocus required>
+                               
+
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label for="email">Your Password</label>
+                            <div class="input-group">
+                               
+                                <input type="password" class="form-control" placeholder="password" id="password"
+                                    autofocus required>
+
+                            </div>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<style>
+    .item {
+        position: relative;
+        display: none;
+        float: left;
+        width: 100%;
+        margin-right: -100%;
+        transition: transform .6s ease-in-out;
+    }
+
+
+    .bg-soft {
+        background-color: rgba(255, 255, 255, .25);
+    }
+
+    .gradient-shape {
+        background-image: linear-gradient(120deg, #fccb90 0, #d57eeb 100%);
+    }
+
+    .presentation-shape {
+        height: 550px;
+        position: absolute;
+        max-width: 1100px;
+    }
+
+    .rotate {
+        transform: rotate(-2deg);
+    }
+
+    .input-group {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .card-header:first-child {
+        border-radius: calc(1rem - 1px) calc(1rem - 1px) 0 0;
+    }
+
+    .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+        margin-left: -1px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .input-group-text {
+        display: flex;
+        align-items: center;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #4b5563;
+        text-align: center;
+        white-space: nowrap;
+        background-color: rgba(255, 255, 255, .95);
+        border: 1px solid rgba(255, 255, 255, .95);
+        border-radius: 1rem;
+    }
+
+
+    body {
+        padding: 25rem;
+        margin: 0;
+        background: #edc0bf;
+        background: linear-gradient(90deg, #edc0bf 0, #c4caef 58%);
+        font-family: 'Inter', sans-serif;
+    }
+
+
+    .shape {
+        position: absolute;
+        width: 150px;
+        top: .5rem;
+        left: .5rem;
+    }
+
+    .card {
+        width: 800px;
+        height: auto;
+        padding: 2rem;
+        background: rgba(255, 255, 255, .7);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        border-radius: 1rem;
+    }
+
+    .card-title {
+        margin-top: 0;
+        margin-bottom: .5rem;
+        font-size: 1.2rem;
+    }
+
+    .card-header {
+        padding: 1.25rem 1.5rem;
+        margin-bottom: 0;
+        background-color: #fff;
+        border-bottom: 1px solid rgba(255, 255, 255, .4);
+    }
+
+    @media (min-width: 768px) {
+        .text-md-center {
+            text-align: center !important;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .p-lg-5 {
+            padding: 5.5rem !important;
+        }
+
+    }
+
+    .card .card-header {
+        background: 0 0;
+    }
+
+    p,
+    a {
+        font-size: 1rem;
+    }
+
+    a {
+        color: #4d4ae8;
+        text-decoration: none;
+    }
+</style>
+
+</html>
