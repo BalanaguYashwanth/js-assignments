@@ -1,0 +1,28 @@
+<html>
+    <head>
+    <script>
+    function update()
+    {
+        var count = document.querySelector('.count');
+        var followers = document.getElementsByClassName('followers')[0].innerText;
+        var counter=0;
+        setInterval(() => {
+                if(counter<1000)
+                {
+                    counter=counter+1;
+                    document.getElementsByClassName('count')[0].innerText=counter.toString(); 
+                }
+        },1)
+
+        setTimeout( ()=>{
+            document.getElementsByClassName('followers')[0].innerText='Instagram'
+        },7000 )
+    }
+    </script>
+    <Link rel="'stylesheet" href="style.css" />
+    </head>
+    <body class="container" onload="update()">
+        <h1 class="count"> counter </h1>
+        <h1 class="followers"> followers </h1>
+    </body>
+</html>

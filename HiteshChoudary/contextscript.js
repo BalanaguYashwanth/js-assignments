@@ -51,3 +51,4 @@ var user={
 user.buyCourse('mango')
 user.buyCourse('flutter')
 console.log(user.info())
+console.log(user.buyCourse())
