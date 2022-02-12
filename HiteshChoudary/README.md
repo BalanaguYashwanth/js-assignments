@@ -2,7 +2,7 @@ Code based on hiteshchoudary youtube channel
 
 --------------------------------------------
 
-Code for Center the body elements
+Code for Center the body elements :-
 
 body {
   display: flex;
