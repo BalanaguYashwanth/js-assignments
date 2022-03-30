@@ -13,20 +13,18 @@ Test Cases -
 */ 
 
 
-let a=[0]
-
 operate(a[0],0)
 function operate(max,pos)
 {
     let last=0
     let curr=0
-    if(max!==0)
+    if(max!==0 && max+pos<=a.length-1)
         for(x=pos;x<=max+pos;x++)
         {
             last=a[x]
             curr=x
         }
-    else if(max===0){
+    else {
         if(a.length-1 === pos)
         {
             console.log(true)
@@ -37,7 +35,8 @@ function operate(max,pos)
             return
         }
     }
-    console.log(last,curr)
+    //console.log(last,curr)
     operate(last,curr)
 }
+
 
