@@ -1,5 +1,5 @@
 /* .
-question ---> In this array [1,2,0,0,1], Initally it will land on the 0th position of array and checks how many positions it can move 
+question ---> In this array [1,2,0,0,1], Initally it will land on the 0th position of array and checks how many positions it can move based out of that value not position
 if it can move last position then return  true else false
 
 For Example -  If we take inital position 0 in array, then value is 1 then it will move to 1 step forword and.
