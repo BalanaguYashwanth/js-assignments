@@ -1,7 +1,12 @@
+/* .
+question ---> In this array [1,2,0,0,1], Initally it will land on the 0th position of array and checks how many positions it can move 
+if it can move last position then return  true else false
 
-//question ---> In this array [1,2,0,0,1], Initally it will land on the 0th position of array and checks how many positions it can move if it can move last position then return  true else false
+For Example -  If we take inital position 0 in array, then value is 1 then it will move to 1 step forword and.
+grabs the value 2 at position 1 and It will move 2 steps forword and 
+grabs the value 0 at position 3 but it unable to move to another position due to value is 0
+*/ 
 
-//For Example -  If we take inital position 0 in array, then value is 1 then it will move to 1 step forword and grabs the value 2 at position 1 and It will move 2 steps forword and grabs the value 0 at position 3 but it unable to move to another position due to value is 0
 
 let a=[0]
 
