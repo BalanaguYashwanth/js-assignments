@@ -1,15 +1,16 @@
 // Online Javascript Editor for free
 // Write, Edit and Run your Javascript code using JS Online Compiler
 
-var name='yash'
+var user= 'hello'
 
-let data={
-    a:name;
-    newdata:function(){
-        var name='bash'
-        console.log(name)
+var username={
+    name:'yashwanth',
+    age:'23',
+    login(){
+        var user = 'updated hello'
+        console.log(user)        
     }
 }
-console.log(data['a']);
 
+username.login()
 
