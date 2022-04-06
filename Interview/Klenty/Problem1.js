@@ -1,4 +1,4 @@
 
 var z=1, y=z=typeof y
 
-console.log(y);
+console.log(y); #undefined
